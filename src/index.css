@@ -1,0 +1,23 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input{
+  /* border: none; */
+  outline: none;
+  border: none;
+}
+button{
+  border: none;
+}
+a{
+  text-decoration: none;
+}

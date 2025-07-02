@@ -1,0 +1,79 @@
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: url("../../assets/_.jpeg"); */
+    /* background: url("../../assets/3.jpg"); */
+    /* background: url("../../assets/m4.jpeg"); */
+    background: url("../../assets/5.jpeg");
+    /* background: url("../../assets/6.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+.loginForm p{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.loginForm label{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.loginForm label span{
+    display: inline-block;
+    margin: 3px;
+}
+
+
+.loginForm input{
+    background-color: transparent;
+    padding: 10px ;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.loginForm span{
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+}
+
+
+.formButtom{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submit_btn,
+.loginLink {
+    padding: 7px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
