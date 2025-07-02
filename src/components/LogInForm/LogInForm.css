@@ -13,15 +13,33 @@
     background-position: center;
 }
 
+
 .loginForm{
+    width: 450px;
+ animation: sliderIn 0.6s ease-out;
+}
+
+
+form{
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 100%;
     text-align: center;
     padding: 20px;
     gap: 10px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     border-radius: 20px;
+}
+
+@keyframes sliderIn {
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .loginForm p{
     font-size: 17px;
