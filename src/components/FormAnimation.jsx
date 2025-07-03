@@ -4,11 +4,11 @@ import SignUp from "./SignUP/SignUp"
 
 function FormAnimation() {
 
-  const [showLogin,setShowLogin]=useState(false)
+  const [showLogin, setShowLogin] = useState(true)
   return (
     <div className="loginContainer" >
-      {showLogin?(<LogInForm setShowLogin={setShowLogin} />):
-      ( <SignUp setShowLogin={setShowLogin}/>)}
+      {showLogin ? (<SignUp setShowLogin={setShowLogin} />):
+      (<LogInForm setShowLogin={setShowLogin} />)}
     </div>
   )
 }

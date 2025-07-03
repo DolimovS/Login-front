@@ -4,15 +4,41 @@ import "./LogInForm.css"
 const LogInForm = ({ setShowLogin }) => {
   const handleGoToLogin = (e) => {
     e.preventDefault();
-    setShowLogin(false);
+    setShowLogin(true);
   }
   const [logInIsm, setLogInIsm] = useState('')
   const [logInFamiliya, setLogInFamiliya] = useState('')
   const [logInEmail, setLogInEmail] = useState('')
   const [logInPassword, setLogInPasword] = useState('')
 
-  const handleLogInSubmit = (e) => {
+  const handleLogInSubmit = async (e) => {
     e.preventDefault()
+    const user = {
+      "ism": logInIsm,
+      "familiya": logInFamiliya,
+      "email": logInEmail,
+      "password": logInPassword,
+    }
+    try {
+      const res = await fetch("http://localhost:5000/api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(user)
+      })
+      const data = await res.json()
+      console.log("Yuborildi:", data);
+      setLogInIsm("")
+      setLogInFamiliya('')
+      setLogInEmail('')
+      setLogInPasword('')
+
+    }
+    catch (error){
+      console.log(error);
+      alert("Xatolig")
+    }
   }
 
   return (
